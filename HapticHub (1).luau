@@ -153,7 +153,7 @@ gravityButton.MouseButton1Click:Connect(function()
             local root = character:FindFirstChild("HumanoidRootPart")
             if humanoid and root then
                 humanoid.UseJumpPower = true
-                humanoid.JumpPower = 60
+                humanoid.JumpPower = 76
                 if gravityConnection then gravityConnection:Disconnect() end
                 gravityConnection = RunService.Stepped:Connect(function()
                     if not moonGravityEnabled then
@@ -204,7 +204,7 @@ speedButton.MouseButton1Click:Connect(function()
     speedEnabled = not speedEnabled
     if speedEnabled then
         speedButton.BackgroundColor3 = Color3.fromRGB(80,80,80)
-        local SpeedValue = 76
+        local SpeedValue = 36
         local player = Players.LocalPlayer
         local character = player.Character or player.CharacterAdded:Wait()
         local root = character:WaitForChild("HumanoidRootPart")
